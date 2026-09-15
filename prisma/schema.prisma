@@ -1,0 +1,92 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id        String   @id @default(cuid())
+  name      String?
+  email     String   @unique
+  password  String
+  role      String   @default("USER") // "USER" | "ADMIN"
+  phone     String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  orders    Order[]
+}
+
+model Product {
+  id          String           @id @default(cuid())
+  title       String
+  slug        String           @unique
+  description String
+  price       Int              // Price in KZT (e.g. 45000)
+  category    String           // "Верхняя одежда", "Худи и Свитшоты", "Брюки", "Футболки", "Аксессуары"
+  images      String           // JSON stringified array of image URLs
+  isFeatured  Boolean          @default(false)
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+  variants    ProductVariant[]
+}
+
+model ProductVariant {
+  id            String      @id @default(cuid())
+  productId     String
+  product       Product     @relation(fields: [productId], references: [id], onDelete: Cascade)
+  color         String      // "Obsidian Black", "Chalk White", "Slate Grey", "Oatmeal"
+  colorHex      String?     // "#09090B", "#F5F5F5", "#4B5563"
+  size          String      // "XS", "S", "M", "L", "XL", "XXL"
+  stockQuantity Int         @default(0)
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+  orderItems    OrderItem[]
+
+  @@unique([productId, color, size])
+}
+
+model Order {
+  id              String      @id @default(cuid())
+  orderNumber     String      @unique // e.g. "QB-2026-9812"
+  userId          String?
+  user            User?       @relation(fields: [userId], references: [id], onDelete: SetNull)
+  customerName    String
+  customerEmail   String
+  customerPhone   String
+  shippingAddress String      // Город, улица, дом, квартира
+  shippingNotes   String?
+  totalAmount     Int         // В KZT
+  status          String      @default("PENDING") // "PENDING" | "PAID" | "SHIPPED" | "CANCELLED"
+  paymentMethod   String      @default("SIMULATED_CARD")
+  paidAt          DateTime?
+  createdAt       DateTime    @default(now())
+  updatedAt       DateTime    @updatedAt
+  items           OrderItem[]
+}
+
+model OrderItem {
+  id               String         @id @default(cuid())
+  orderId          String
+  order            Order          @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  productVariantId String
+  productVariant   ProductVariant @relation(fields: [productVariantId], references: [id])
+  title            String
+  color            String
+  size             String
+  quantity         Int
+  price            Int            // В KZT
+}
+
+model LookBookImage {
+  id        String   @id @default(cuid())
+  imageUrl  String
+  title     String?
+  altText   String?
+  order     Int      @default(0)
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

@@ -1,0 +1,281 @@
+{
+  "app": {
+    "title": "QARA BALA",
+    "description": "Премиум бренд одежды"
+  },
+  "nav": {
+    "home": "Главная",
+    "shop": "Магазин",
+    "about": "О нас",
+    "contact": "Контакты",
+    "cart": "Корзина",
+    "account": "Лицей",
+    "login": "Вход",
+    "logout": "Выход",
+    "search": "Поиск",
+    "language": "Язык"
+  },
+  "hero": {
+    "title": "QARA BALA",
+    "subtitle": "Премиум одежда для современной эпохи",
+    "cta": "Перейти в магазин",
+    "ctaSecondary": "Просмотр коллекции"
+  },
+  "footer": {
+    "copyright": "© 2024 QARA BALA. Все права защищены.",
+    "links": {
+      "shop": "Магазин",
+      "about": "О нас",
+      "contact": "Контакты",
+      "privacy": "Политика конфиденциальности",
+      "terms": "Условия предоставления услуг",
+      "shipping": "Доставка и возврат",
+      "faq": "Частые вопросы",
+      "sizeGuide": "Руководство по размерам"
+    },
+    "newsletter": {
+      "title": "Рассылка",
+      "subtitle": "Подпишитесь, чтобы получать обновления о новых коллекциях и эксклюзивные предложения.",
+      "email": "Введите ваш email",
+      "subscribe": "Подписаться"
+    },
+    "social": {
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn"
+    }
+  },
+  "products": {
+    "viewProduct": "Посмотреть товар",
+    "addToCart": "Добавить в корзину",
+    "outOfStock": "Нет в наличии",
+    "inStock": "В наличии",
+    "lowStock": "Только {{count}} шт. осталось",
+    "category": {
+      "all": "Все категории",
+      "clothing": "Одежда",
+      "accessories": "Аксессуары",
+      "shoes": "Обувь",
+      "bags": "Сумки"
+    }
+  },
+  "productDetail": {
+    "selectColor": "Выберите цвет",
+    "selectSize": "Выберите размер",
+    "sizeGuide": "Руководство по размерам",
+    "quantity": "Количество",
+    "stockAvailable": "{{count}} в наличии",
+    "shipping": "Доставка и возврат",
+    "careInstructions": "Инструкции по уходу",
+    "material": "Материал и уход",
+    "details": "Детали товара",
+    "reviews": "Отзывы",
+    "relatedProducts": "Вам также может понравиться"
+  },
+  "sizeGuide": {
+    "title": "Руководство по размерам",
+    "subtitle": "Найдите идеальную посадку с помощью нашего подробного руководства по размерам",
+    "close": "Закрыть",
+    "bodyMeasurements": {
+      "chest": "Грудь",
+      "waist": "Талия",
+      "hips": "Бёдра",
+      "height": "Рост",
+      "shoulders": "Плечи"
+    },
+    "instructions": "Измерьте себя и сравните с таблицей размеров ниже",
+    "note": "Размеры могут незначительно варьироваться в зависимости от модели. Для наиболее точной посадки обратите внимание на конкретные размеры каждой модели."
+  },
+  "cart": {
+    "title": "Корзина",
+    "empty": "Ваша корзина пуста",
+    "emptySubtitle": "Просмотрите наши коллекции, чтобы найти что-то, что вам понравится.",
+    "continueShopping": "Продолжить покупки",
+    "checkout": "Оформить заказ",
+    "item": "товар",
+    "items": "товаров",
+    "subtotal": "Подытог",
+    "shipping": "Доставка",
+    "tax": "Налог",
+    "total": "Итого",
+    "removeItem": "Удалить",
+    "updateQuantity": "Обновить количество",
+    "quantity": "Количество",
+    "savings": "Экономия",
+    "freeShipping": "Бесплатная доставка при заказе от {{amount}}"
+  },
+  "checkout": {
+    "title": "Оформление заказа",
+    "billingInfo": "Выставочные данные",
+    "shippingInfo": "Данные для доставки",
+    "sameAsBilling": "То же, что и для выставления счета",
+    "shippingMethod": "Способ доставки",
+    "paymentMethod": "Способ оплаты",
+    "reviewOrder": "Проверьте заказ",
+    "placeOrder": "Оформить заказ",
+    "firstName": "Имя",
+    "lastName": "Фамилия",
+    "email": "Email",
+    "phone": "Телефон",
+    "address": "Улица и номер дома",
+    "city": "Город",
+    "postalCode": "Почтовый индекс",
+    "country": "Страна",
+    "province": "Область/Регион",
+    "notes": "Примечания к заказу (необязательно)",
+    "freeShipping": "Бесплатная доставка",
+    "standardShipping": "Стандартная доставка",
+    "expressShipping": "Экспресс-доставка",
+    "creditCard": "Кредитная карта",
+    "paypal": "PayPal",
+    "applePay": "Apple Pay"
+  },
+  "auth": {
+    "login": {
+      "title": "Добро пожаловать обратно",
+      "subtitle": "Войдите в свой аккаунт, чтобы продолжить",
+      "email": "Email",
+      "password": "Пароль",
+      "forgotPassword": "Забыли пароль?",
+      "signUp": "Регистрация",
+      "noAccount": "Нет аккаунта?",
+      "or": "Или войдите с помощью",
+      "google": "Войти через Google",
+      "apple": "Войти через Apple"
+    },
+    "register": {
+      "title": "Создать аккаунт",
+      "subtitle": "Присоединяйтесь к QARA BALA для эксклюзивного доступа",
+      "name": "Полное имя",
+      "email": "Email",
+      "password": "Пароль",
+      "confirmPassword": "Подтвердите пароль",
+      "signUp": "Создать аккаунт",
+      "haveAccount": "Уже есть аккаунт?",
+      "login": "Вход",
+      "agreeToTerms": "Я согласен с условиями предоставления услуг и политикой конфиденциальности"
+    },
+    "forgotPassword": {
+      "title": "Забыли пароль?",
+      "subtitle": "Введите ваш email, чтобы сбросить пароль",
+      "email": "Email",
+      "reset": "Сбросить пароль",
+      "backToLogin": "Назад к входу"
+    }
+  },
+  "admin": {
+    "dashboard": "Панель управления",
+    "products": "Товары",
+    "orders": "Заказы",
+    "customers": "Клиенты",
+    "inventory": "Инвентарь",
+    "analytics": "Аналитика",
+    "settings": "Настройки",
+    "users": "Пользователи",
+    "addProduct": "Добавить товар",
+    "editProduct": "Редактировать товар",
+    "deleteProduct": "Удалить товар",
+    "save": "Сохранить",
+    "cancel": "Отмена",
+    "updateStock": "Обновить запасы",
+    "stockLevel": "Уровень запасов",
+    "variants": "Варианты",
+    "addVariant": "Добавить вариант",
+    "sku": "Артикул",
+    "price": "Цена",
+    "category": "Категория",
+    "title": "Название",
+    "description": "Описание",
+    "images": "Изображения",
+    "isActive": "Активен",
+    "color": "Цвет",
+    "size": "Размер",
+    "inventoryManagement": "Управление запасами",
+    "bulkUpdate": "Массовое обновление",
+    "exportCSV": "Экспорт CSV",
+    "orderDetails": "Детали заказа",
+    "orderId": "Номер заказа",
+    "customerName": "Имя клиента",
+    "total": "Итого",
+    "status": "Статус",
+    "date": "Дата",
+    "pending": "Ожидает",
+    "paid": "Оплачен",
+    "shipped": "Отправлен",
+    "cancelled": "Отменён",
+    "updateStatus": "Обновить статус",
+    "items": "Товары"
+  },
+  "orders": {
+    "title": "Мои заказы",
+    "noOrders": "Еще нет заказов",
+    "noOrdersSubtitle": "Начните покупки, чтобы оформить первый заказ.",
+    "order": {
+      "status": {
+        "pending": "Заказ оформлен",
+        "paid": "Оплата подтверждена",
+        "shipped": "Отправлен",
+        "cancelled": "Отменён"
+      },
+      "details": "Детали заказа",
+      "trackingNumber": "Номер отслеживания",
+      "estimatedDelivery": "Ожидаемая дата доставки"
+    }
+  },
+  "common": {
+    "loading": "Загрузка...",
+    "error": "Что-то пошло не так",
+    "retry": "Попробовать снова",
+    "close": "Закрыть",
+    "save": "Сохранить",
+    "cancel": "Отмена",
+    "confirm": "Подтвердить",
+    "delete": "Удалить",
+    "edit": "Редактировать",
+    "view": "Просмотр",
+    "search": "Поиск",
+    "filter": "Фильтр",
+    "sort": "Сортировка",
+    "clear": "Очистить",
+    "apply": "Применить",
+    "all": "Все",
+    "next": "Далее",
+    "previous": "Назад",
+    "submit": "Отправить",
+    "required": "Обязательно",
+    "optional": "Необязательно"
+  },
+  "filters": {
+    "priceRange": "Ценовой диапазон",
+    "colors": "Цвета",
+    "sizes": "Размеры",
+    "categories": "Категории",
+    "sortBy": "Сортировать по",
+    "popularity": "Популярность",
+    "priceLow": "Цена: по возрастанию",
+    "priceHigh": "Цена: по убыванию",
+    "newest": "Сначала новые",
+    "rating": "По рейтингу"
+  },
+  "notFound": {
+    "title": "Страница не найдена",
+    "description": "Страница, которую вы ищете, не существует или была перемещена.",
+    "backHome": "На главную"
+  },
+  "telegram": {
+    "notification": {
+      "title": "🛍️ QARA BALA - Новый заказ",
+      "orderDetails": "📋 Детали заказа:",
+      "orderId": "Номер заказа:",
+      "customerInfo": "👤 Информация о клиенте:",
+      "customerName": "Имя:",
+      "customerPhone": "Телефон:",
+      "deliveryAddress": "🚚 Адрес доставки:",
+      "items": "📦 Заказанные товары:",
+      "totalAmount": "💰 Общая сумма:",
+      "paymentStatus": "💳 Статус оплаты:",
+      "viewDashboard": "Просмотр в панели"
+    }
+  }
+}
